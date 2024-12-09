@@ -1,0 +1,112 @@
+div{
+  background-color: yellow;
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+   
+}
+/* settings- */
+.container{
+    border: 1px solid grey;
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+}
+/* div-for-hover */
+ div:hover{ 
+    transition: 2s;
+    /* background-color: blue; */
+    border-radius: 0px;
+}
+/* settings-for-box */
+.box{
+    background-color: deeppink;
+    border-top: 5px solid blue;
+    height: 95px;
+    width: 100px;
+    -webkit-transform: rotate(34deg);
+}
+/* .container-hover-settings */
+.container:hover{
+    background-color: green;
+    /* margin-left: 75%; */
+    background-color: aqua;
+    rotate: 3turn;
+    -webkit-transform-origin: 0% 0%;
+    transform: scale(-3);
+    transform: skew(1);
+}
+/* color.a */
+.a{
+    background-color: crimson;
+}
+/* color.b */
+.b{
+    background-color: darkgreen;
+}
+/* .ccolor */
+.c{
+    background-color: black;
+}
+/* .dcolor */
+.d{
+    background-color: cornflowerblue;
+}
+/* hover-settings-for-.a */
+.a:hover{
+    background-color: darkgreen;
+    transition-duration: 2s;
+    width: 500px;
+    border-style: ridge;
+    border-color: yellow;
+    border-width: 5px;
+}
+/* .b-hover */
+.b:hover{
+    background-color: black;
+    transition-duration: 4.5s;
+    width: 525px;
+    border-style: dashed;
+    border-color: red;
+    border-width: 5px;
+}
+/* .c-hover */
+.c:hover{
+    background-color: yellow;
+    transition-duration: 5s;
+    width: 550px;
+    border-style: groove;
+    border-color: green;
+    border-width: 5px;
+}
+/* .d */
+.d{
+    background-color: darkred;
+    position: relative;
+    animation-name: testAnimation;
+}
+/* .ani-settings */
+.ani{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    margin: 100px auto 0;
+     animation-name: testAnimation; 
+     animation-duration: 8s;
+     animation-timing-function: linear;
+     animation-direction: reverse ;
+    animation-iteration-count: infinite;
+}
+/* keyframe-info */
+@keyframes testAnimation{
+    0%{
+        transform: rotate(360deg);
+        border-radius: 50% 0 50% 0;
+    }
+    100%{
+        border-radius: 0 50% 0 50%;
+        background-color: aqua;
+    }
+}

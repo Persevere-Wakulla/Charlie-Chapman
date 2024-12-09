@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fakeStore.css">
+    <title>Fake Store</title>
+</head>
+<body>
+<!-- <script>$(document).ready(function(){
+     $(".btn").addClass("animated ");
+})</script> -->
+<script src="jquery-3.7.1.min.js"></script>
+    <nav>
+        <!-- The overlay dropdown menu -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" id="close-nav">&times;</a>
+            <!-- Overlay dropdown menu content -->
+            <div class="overlay-content">
+                <a href="#" id="women"> &#128087;Woman&#128096;</a>
+                <a href="#" id="men"> &#128085;Men &#x1F45F;</a>
+                <a href="#" id="electronics">&#128187;Electronics &#127918;</a>
+                <a href="#" id="jewelery">&#128142;Jewelery&#128141;</a>
+            </div>
+        </div>
+        <!-- div for card in nav with characters for text -->
+        <div class="cartdiv">
+            <p class="checkcart">&#128722;</p>
+            <!-- The Modal -->
+            <div id="cartModal" class="modal2">
+                <!-- Modal content -->
+                <div class="cartModal-content">
+                    <span class="closeCartModal"> &#10226;</span>
+                    <section class="checkoutModal">
+                        <h3>Checkout</h3>
+                        <div class="items">
+                            <!-- <p class="product">Item:<span class="itemTitle"></span> <span class="itemprice">$</span></p> -->
+                        </div>
+                        <div class="totalCost">
+                            <h4>Total:</h4>
+                            <div class="money"></div>
+                        </div>
+                       <h3 id="discard">🗑️</h3>
+                    </section>
+                </div>
+
+            </div>
+            <p id="cart"> &#119966;&#119997;&#8495;&#119992;&#x1D4C0;&#8500;&#120010;&#120009; </p>
+        </div>
+        <!-- menu opener -->
+        <!-- characters for menu -->
+        <span id="nav-open">&#9207;&#8499;&#8495;&#120003;&#120010;&#9207;</span>
+        <!--Menu -->
+        <!-- div for login in button -->
+        <div>
+            <!-- btn for login -->
+            <button type="button" class="open-button" id="btn">&#120131;&#120134;&#120126;&#120128;&#8469;</button>
+            <!-- login in form -->
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Login</h1>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="emailText" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required id="passwordText">
+                    <!-- btn to submit login info -->
+                    <button id="login" type="submit" class="btn login">Login</button>
+                    <!-- btn to close login form -->
+                    <button type="button" class="btn cancel">Close</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- <h1>header-->
+    <header>
+        <!-- characters for header text -->
+        <h1 class="glow"> &#119966;&#119990;&#120008;&#119990;
+            &#119966;&#119997;&#119990;&#120007;&#120001;&#119998;&#8495;&#120008;</h1>
+        <!-- span for login in greeting js -->
+        <h2> <span class="greeting"></span></h2>
+        <!-- modal div -->
+        <div id="modal-div" class="modal">
+            <div class="modal-content">
+                <div class="modal-container">
+                    <!-- modal closer -->
+                    <span id="closeModal"> &#10226;</span>
+                    <!-- form for billing info & card payment inside of modal -->
+                    <form action="/fakeStore.html">
+                        <!-- div for billing info -->
+                        <div class="billingInfo info">
+                            <h3 id="duenow">Amount due: <span class="paynow"></span></h3>
+
+                            <h3>Billing Address</h3>
+                            <label for="fname"> &#128100;Full Name</label>
+                            <input class="inPut" type="text" name="fullname" id="fname" placeholder="John M. Doe"><br>
+                            <label for="email"> &#128231;Email</label>
+                            <input class="inPut" type="text" id="email" name="email" placeholder="john@example.com"><br>
+                            <label for="adr"> &#127968;Address</label>
+                            <input class="inPut" type="text" id="adr" name="address"
+                                placeholder="542 W. 15th Street"><br>
+                            <label for="city"> &#127961;City</label>
+                            <input class="inPut" type="text" id="city" name="city" placeholder="New York">
+                        </div>
+                        <!-- div for card info -->
+                        <div class="cardInfo info">
+                            <h3>&#128178;Payment&#128178; </h3>
+                            <label for="cname">Name on Card</label>
+                            <input class="inPut" type="text" id="cname" name="cardname" placeholder="John More Doe"><br>
+                            <label for="ccnum">&#128179;Credit card number&#128179;</label>
+                            <input class="inPut" type="text" id="ccnum" name="cardnumber"
+                                placeholder="1111-2222-3333-4444"><br>
+                            <label for="expmonth">Exp Month</label>
+                            <input class="inPut" type="text" id="expmonth" name="expmonth" placeholder="September"><br>
+                            <label for="expyear">Exp Year</label>
+                            <input class="inPut" type="text" id="expyear" name="expyear" placeholder="2018"><br>
+                            <label for="cvv">CVV</label>
+                            <input class="inPut" type="text" id="cvv" name="cvv" placeholder="352"><br>
+                            <label>
+                                <!-- checkbox for form -->
+                                <input type="checkbox"> Shipping address same as billing
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- form with searchbar-->
+        <form class="example">
+            <input type="text"
+                placeholder="&#128269; &#119982;&#x212F;&#119990;&#120007;&#119992;&#119997;  &#119979;&#120007;&#8500;&#119993;&#120010;&#119992;&#120009;&#120008;..&#128270;"
+                name="search" value="" class="search" id="userInput" autocomplete="off">
+
+        </form>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- section with background imgage and text -->
+        <section class="logo ">
+            <div class="hero-image">
+                <div class="hero-text">
+                    <!-- characters for header-->
+                    <h2>
+                        &#119982;&#119997;&#8500;&#120005; &#119983;&#119997;&#x212F;
+                        &#8466;&#119990;&#120009;&#x212F;&#120008;&#120009;
+                        &#8497;&#119990;&#120008;&#119997;&#119998;&#8500;&#120003;,
+                        &#119973;&#x212F;&#120012;&#x212F;&#120001;&#x212F;&#120007;&#120014; &amp;
+                        &#8496;&#120001;&#x212F;&#119992;&#120009;&#120007;&#8500;&#120003;&#119998;&#119992;&#120008;
+                        &#119964;&#120001;&#120001; &#8497;&#120007;&#8500;&#120002; &#119988;&#8500;&#120010;&#120007;
+                        &#119966;&#8500;&#120010;&#119992;&#119997;
+                    </h2>
+                    <!-- div for countdown timer -->
+                    <div class="countdown">
+                        <hr>
+                        <p>Sale ends: June 6th. 2024</p>
+                        <p id="demo"> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section to display items js -->
+        <section id="placeItems" class="container">
+        </section>
+
+    </main>
+    <!-- footer characters to footer text with link -->
+    <footer>&#119967;&#x212F;&#120008;&#119998;&#8458;&#120003;&#x212F;&#119993; &#8492;&#120014; <a href=""
+            id="footer"><span class="closing">&#9770;&#119973; <sup>2</sup></span></a> </footer>
+    <script src="fakeStore.js" type="module"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="blackJack.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="split left">
+        <div class="centered">
+            <section class="dealer">
+                <h1 class="head">BlackJack</h1>
+                <h3 id="h3">Dealer</h3>
+                <div class="cards">
+                    <img src="" alt="" id="dealer-first-card">
+                    <img src="" alt="" id="dealer-second-card">
+                    <img src="" alt="" id="dealer-third-card">
+                    <div>
+                        <h4>Dealer under 17 get hit</h4>
+                        <br>
+                        <button class="button"><span> Hit </span></button>
+                    </div>
+                 
+                </div>
+                <p class="pot">Pot:$ <span id="pot">0</span> </p>
+            </section>
+            <button type="button" class="btn1" id="new-game">New game</button>
+        </div>
+    </div>
+    <div class="split right">
+        <div class="centered">
+            <section>
+                <h1 class="section2">Player</h1>
+                <img src="" alt="" class="img-holder">
+                <img src="" alt="" class="img-holder2">
+                <div class="flex">
+                    <img src="" alt="" class="img-holder3">
+                    <img src="" alt="" class="img-holder4">
+                    <img src="" alt="" class="img-holder5">
+                    <div class="player"></div>
+                    <div class="player1"></div>
+                </div>
+                <div class="btn">
+                    <button class="btn1" id="forward" type="button">Get card</button>
+                    <button type="button" class="btn1" id="hit">Hit</button>
+                </div>
+                <h3 id="amount">Bet Amount:$ <span class="bet-amount">0</span></h3>
+                <div class="betting-area">
+                    <button type="button" class="bet bet-increase">💵👆🏽</button>
+                    <button type="button" class="bet reset">❎</button>
+                    <button type="button" class="bet bet-decrease">👇🏽💵</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="blackJack.js"></script>
+</body>
+
+</html>

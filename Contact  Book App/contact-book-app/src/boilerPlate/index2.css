@@ -1,0 +1,45 @@
+/* body{
+    background-color: aquamarine;
+}
+
+.box{
+    border: 3px solid black;
+    padding: 25px ;
+} */
+
+/* ! Stopwatch 4:23.05 */
+
+body{
+    background-image: url('src/assets/pexels-steve-johnson-1269968.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stopwatch{
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    width: 100vw;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid orangered;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.display{
+  text-align: center;
+
+    font-size: 5rem;
+    font-family: fantasy;
+    color: red;
+    text-shadow: 2px 2px hsla(0, 0%, 0%, 0.741);
+    margin-bottom: 25px;
+}

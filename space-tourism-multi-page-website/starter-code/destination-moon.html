@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="destination.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <nav>
+    <img src="assets/shared/logo.svg" alt="logo" id="logo">
+    <!-- <p class="line">&#x2594;</p> -->
+    <div class="flex sidepanel" id="mySidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./index.html" class="link" id="home">00 Home</a>
+      <a href="./destination-moon.html" class="link" id="destination">01 Destination</a>
+      <a href="./crew-commander.html" class="link" id="crew">02 Crew</a>
+      <a href="./technology-vehicle.html" class="link" id="tech">03 Technology</a>
+    </div>
+    <button type="button" onclick="openNav()" class="openbtn"> <img src="assets/shared/icon-hamburger.svg" alt=""
+        id="menu"></button>
+  </nav>
+
+  <article>
+    <div class="plants">
+      <div class="flx">
+        <h3 class="pick_dest"> 01 Pick your destination</h3>
+        <img src="#" alt="" class="png">
+      </div>
+      <div class="grid">
+        <div class="links">
+          <a href="#" class="moon"> Moon</a>
+          <a href="#" class="mars">Mars</a>
+          <a href="#" class="europa"> Europa</a>
+          <a href="#" class="titan">Titan</a>
+        </div>
+        <h1 class="name"></h1>
+        <p class="descript">
+
+        </p>
+        <hr>
+        <div class="dist-time">
+          <div class="distance">
+            <p class="avg-d"> Avg. Distance</p>
+            <p class="km"></p>
+          </div>
+          <div class="travel">
+            <p class="est-tt">Travel Time</p>
+            <p class="days"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <script src="destination.js"></script>
+</body>
+
+</html>

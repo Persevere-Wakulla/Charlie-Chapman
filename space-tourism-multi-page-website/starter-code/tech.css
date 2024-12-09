@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* var for color */
+:root {
+    --dark: #0b0d17;
+    --purp: #D0D6F9;
+    --white: #ffffff;
+    --heading1: 150px;
+    --heading2: 100px;
+    --heading3: 56px;
+    --heading4: 32px;
+    --heading5: 28px;
+}
+
+/* body with background img */
+body {
+    background-image: url(assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em 5em 2em;
+
+}
+
+/* links inside of nav */
+.flex {
+    background: rgba(255, 255, 255, 0.201);
+    backdrop-filter: blur(10px);
+    padding: .5em;
+    border-radius: 10px;
+}
+
+/* btns for mobile nav display */
+.closebtn,
+.openbtn {
+    display: none;
+}
+
+/* links inside of nav */
+a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--heading5);
+    padding-right: 10px;
+}
+
+/* hover for links  */
+a:hover {
+    background-color: rgba(255, 255, 255, 0.201);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+/* title settings */
+.title {
+    font-size: var(--heading3);
+    color: var(--white);
+    letter-spacing: 2.4px;
+    position: absolute;
+    left: 8em;
+    top: 4em;
+}
+
+/* num in title */
+.num {
+    color: darkgray;
+}
+
+/* links at bottom of page */
+.circle {
+    padding-bottom: 1em;
+    color: var(--white);
+    font-size: var(--heading3);
+
+}
+
+/* hover for likns */
+.circle:hover {
+    color: var(--purp);
+    font-weight: 900;
+}
+
+/* paragraph terminology */
+.term {
+    color: var(--purp);
+    display: grid;
+    font-size: var(--heading5);
+}
+
+/* launch vehicle type */
+.lV {
+    font-size: var(--heading2);
+    color: var(--white);
+    padding-bottom: .9em;
+}
+
+/* tech. description paragraph */
+.tech-para {
+    color: var(--purp);
+    letter-spacing: 2.5px;
+    line-height: 1.5em;
+    font-size: var(--heading4);
+    max-width: 580px;
+}
+
+/* element display settings */
+article {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* btn one */
+.one {
+    position: absolute;
+    top: 6em;
+    left: 1em;
+}
+
+/* btn two */
+.two {
+    position: absolute;
+    top: 7.5em;
+    left: 1em;
+}
+
+/* btn three */
+.three {
+    position: absolute;
+    top: 9em;
+    left: 1em;
+}
+
+/* img */
+.tech {
+    margin-right: 2em;
+}
+
+/* div */
+.second {
+    position: absolute;
+    top: 16.5em;
+    left: 8em;
+}
+
+/* media query */
+@media(max-width:1255px) {
+    body {
+        background-image: url(assets/technology/background-technology-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* postioning setting */
+    article {
+        position: relative;
+    }
+
+    /* img settings */
+    .tech {
+        margin: 0;
+        width: 110%;
+        max-height: 550px;
+    }
+
+    /* pargraph of name */
+    .title {
+        font-size: var(--heading4);
+        color: var(--white);
+        letter-spacing: 2px;
+        position: absolute;
+        left: 8em;
+        top: 4em;
+    }
+
+    /* btn one postioning */
+    .one {
+        position: absolute;
+        left: 6em;
+        top: 10.5em;
+    }
+
+    /* btn two postioning */
+    .two {
+        position: absolute;
+        left: 7.5em;
+        top: 10.5em;
+    }
+
+    /* btn three postioning */
+    .three {
+        position: absolute;
+        left: 9em;
+        top: 10.5em;
+    }
+
+    /*  postioning for div */
+    .second {
+        position: absolute;
+        left: 4;
+        top: 35em;
+        text-align: center;
+    }
+
+    /* launch vehicle type */
+    .lV {
+        font-size: 40px;
+        color: var(--white);
+        letter-spacing: .5em;
+    }
+
+    /* paragraph */
+    .tech-para {
+        color: var(--purp);
+        letter-spacing: 2;
+        line-height: 1.5em;
+        font-size: var(--heading4);
+        max-width: 550px;
+        padding-right: .9em;
+        padding-left: .9em;
+
+    }
+}
+
+/* media query for mobile */
+@media(max-width:850px) {
+
+    /* btns to open & close menu */
+    .closebtn,
+    .openbtn {
+        display: block;
+    }
+
+    /* background img for mobile */
+    body {
+        background-image: url(assets/technology/background-technology-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vh;
+    }
+
+    /* The sidepanel menu */
+    .sidepanel {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.459);
+        backdrop-filter: blur(10px);
+        opacity: initial;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+
+    /* padding for title */
+    .title {
+        padding-bottom: 1em;
+        left: 2em;
+    }
+
+    /* The sidepanel links */
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 35px;
+        margin-bottom: 3em;
+        color: var(--white);
+        display: block;
+        transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 56px;
+        margin-left: 50px;
+    }
+
+    /* Style the button that is used to open the sidepanel */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    /* hover for btn */
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    /* btn one */
+    .one {
+        position: absolute;
+        left: 3em;
+        top: 10.5em;
+    }
+
+    /* btn two */
+    .two {
+        position: absolute;
+        left: 4.5em;
+        top: 10.5em;
+    }
+
+    /* btn three */
+    .three {
+        position: absolute;
+        left: 6em;
+        top: 10.5em;
+    }
+
+    /* postioning for div */
+    .second {
+        position: absolute;
+        left: 1em;
+        top: 35em;
+        text-align: center;
+    }
+
+    /* lanuch vehicle */
+    .lV {
+        font-size: var(--heading4);
+        color: var(--white);
+        letter-spacing: .2em;
+
+    }
+
+    /* paragraph */
+    .tech-para {
+        color: var(--purp);
+        /* letter-spacing: 2; */
+        /* line-height: 1.5em; */
+        font-size: var(--heading5);
+        /* max-width: 580px; */
+    }
+
+    .tech {
+        width: 100%;
+    }
+}

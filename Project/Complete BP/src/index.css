@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+  background-image: url(../public/assets/background-stars.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: aliceblue;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #838391;
+  list-style: none;
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+/* .sect{
+  margin-top: 2em;
+} */
+.main-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 8em;
+  margin-top: 4em;
+  margin-left: 6em;
+}
+
+.grid {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+p {
+  width: 50%;
+  line-height: 25px;
+}
+
+button {
+  padding: 15px;
+  margin-bottom: 2em;
+  width: 50%;
+  box-shadow: 0 1px 0 hsl(224, 84%, 74%);
+  border-radius: 5px;
+}
+
+.mercury:hover {
+  background-color: #838391;
+}
+
+.mercury:active {
+  background-color: #419ebb;
+}
+
+.btn-div {
+  margin-top: 3em;
+}
+.infoP {
+  text-align: center;
+}
+
+.infoDiv {
+  border: 2px solid #838391;
+  border-radius: 10px;
+  box-shadow: 0 1px 0 hsl(224, 84%, 74%);
+}
+
+h3 {
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+.venus:hover {
+  background-color: #838391;
+}
+
+.venus:active {
+  background-color: #eda249;
+}
+
+.earth:hover {
+  background-color: #838391;
+}
+
+.earth:active {
+  background-color: #6f2ed6;
+}
+.mars:hover {
+  background-color: #838391;
+}
+
+.mars:active {
+  background-color: #d14c32;
+}
+
+.jup:hover {
+  background-color: #838391;
+}
+
+.jup:active {
+  background-color: #d83a34;
+}
+
+.saturn:hover {
+  background-color: #838391;
+}
+
+.saturn:active {
+  background-color: #eda249;
+}
+.uranus:hover {
+  background-color: #838391;
+}
+
+a{
+  text-decoration: none;
+}
+.uranus:active {
+  background-color: #1ec2a4;
+}
+
+.neptune:hover {
+  background-color: #838391;
+}
+
+.neptune:active {
+  background-color: #2d68f0;
+}
+
+.home{
+  text-align: center;
+  background: linear-gradient(to right,    c #2D68F0,#D14C32);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

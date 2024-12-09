@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+/* first-section-display */
+.grid{
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 2rem;
+  margin: 0 auto;
+}
+/* header-settings */
+header{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+#patteren{
+    display: none;
+}
+h1{
+    padding-bottom: 2rem;
+}
+.one{
+    background-image: url(assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-row:1/2 ; 
+    font-size:20px ;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+}
+.pics{
+    grid-row: 2/3;
+    padding: 4em;
+    background-color: black;
+     background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5rem;
+    border-radius: 20px;
+}
+.pattern{
+    width: 70%;
+    padding-left: 2rem;
+    max-width: 70%;
+}
+.position{
+    position: relative;
+    height: 8rem;
+}
+
+.phone{
+    width: 40%;
+    position: absolute;
+    top: -7rem; 
+    left: 3rem;
+    min-width: 8em;
+    max-width: 12rem;
+}
+.two{
+    grid-row: 3/4;
+    background-color:#FA7453;
+    color: #FCFAF9;
+    font-size: 20px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 20px;
+}
+h3{
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    
+}
+button{
+    font-size: 12px;
+   width: 15rem;
+   border-radius: 10px;
+}
+.apple{
+    background-color: black;
+    color: #FCFAF9;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+.apple:hover{
+    background-color: #66E2DC;
+}
+.andriod:hover{
+    background-color: #FFB964;
+}
+.andriod{
+   
+    padding-right: 4rem;
+    padding-top: .2rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    font-size:12px;
+    text-align: center;
+    
+}
+footer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: medium;
+    padding-top: 1rem;
+    padding-bottom:1rem ;
+}
+.footer{
+    padding-bottom: .8rem;
+}
+.flex{
+    padding-top: 1rem;
+}
+@media (min-width:400px){
+    body{
+       
+        background-image: url(assets/bg-pattern-1.svg);
+        background-repeat: no-repeat;
+        background-size:15rem;
+        background-position-x: right;
+        
+    }
+    .one{
+        width: 50%;
+        font-size: 16px;
+        padding-bottom: 3rem;
+    }
+    #middle-section{
+        position: relative;
+    }
+    .pics{
+       background-image: url(assets/bg-pattern-2.svg);
+       background-position: center; 
+       height: 20rem;
+
+   }
+   .pattern{
+    display: none;
+   }
+    .phone{
+        position: absolute;
+       top:-9rem;
+       left: 0rem;
+    }
+    .two{
+        width: 50%;
+        font-size: medium;
+        position: absolute;
+        top: 7rem;
+        left: 10rem;
+    }
+    button{
+        width: 100%;
+    }
+    .flex{
+        display: flex; 
+        gap: .5em;
+       
+    }
+    #last{
+        width: 40%;
+    }
+    footer{
+       margin-top: 11rem; 
+    } 
+    .footer{
+        margin-top: 4em;
+    }
+    .social{
+       object-fit: scale-down;
+    }
+    .email{
+        font-weight: 900;
+    }
+}
+@media(min-width:899px) {
+      *{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1{
+            font-size:50px;
+            line-height: 2.5rem;
+        }
+        .one{
+            font-size:medium;
+            margin-bottom: 5rem;
+        }
+    #middle-section{
+        position: relative;
+    }
+    .phone{
+        position: absolute;
+        left: 10rem;
+      
+    }
+    .pics{
+        margin-bottom: 12rem;
+        background-position: center;
+        height: 25rem;
+        width: 90%;
+    }
+    .two{
+        width: 40%;
+        padding-bottom: 3rem;
+        position: absolute;
+        left: 30rem;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

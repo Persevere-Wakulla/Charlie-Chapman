@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.home,.destinations{
+  background-image:url(../space-tourism-multi-page-with-react-router/starter-code/assets/home/background-home-desktop.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: antiquewhite;
+}
+.crew{
+  background-image:url(../space-tourism-multi-page-with-react-router/starter-code/assets/crew/background-crew-desktop.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: antiquewhite;
+}
+
+.tech{
+  background-image: url(../space-tourism-multi-page-with-react-router/starter-code/assets/technology/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: antiquewhite;
+}
+
+a href{
+  color: #000;
+}

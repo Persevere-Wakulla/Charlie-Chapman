@@ -1,0 +1,217 @@
+*{
+    margin: 0 ;
+    box-sizing: border-box;
+    
+}
+:root{
+  
+--darkblue: hsl(226, 43%, 10%);
+--Darkblue: hsl(235, 46%, 20%);
+--Desaturatedblue: hsl(235, 45%, 61%);
+--PaleBlue: hsl(236, 100%, 87%);
+
+--work: hsl(15, 100%, 70%);
+--play: hsl(195, 74%, 62%);
+--study: hsl(348, 100%, 68%);
+--exercise: hsl(145, 58%, 55%);
+--social: hsl(264, 64%, 52%);
+--orange: hsl(43, 84%, 65%);
+--Blue: hsl(246, 80%, 60%);
+}
+body{
+    margin: 0 auto;
+   /* max-width: 400px ;  */
+   background-color: black;
+}
+.attribution{
+    color: cornsilk;
+}
+main{
+    background-color: var(--darkblue);
+    color: var(--PaleBlue);
+    /* padding: 1em; */
+}
+.jr{
+    width: 50%; 
+    /* border: 1px solid white;
+    border-radius: 0%; */
+}
+.jerm{
+    display: flex;
+    padding-top: 1rem;
+    background-color: var(--Blue);
+    border-radius: 20px;
+    padding: 1em;
+    position: relative;
+    z-index: 2;
+    color: var(--PaleBlue);
+}
+.name{
+    padding-top: 2rem;
+    padding-left: .5rem;
+    font-size: 24px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    margin-top: .5em;
+    color: var(--PaleBlue);
+    background-color: var(--Darkblue);
+    position: relative;
+    top: -1.5em; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.one{
+    position: relative;
+   
+}
+ #month:hover{
+    color: white;
+}
+#day:hover{
+    color: white;
+}
+#week:hover{
+    color: white;
+}
+#orange{
+    background-image: url(images/icon-work.svg);
+    background-color: var(--work);
+}
+.card{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   background-color: var(--Darkblue);
+    position: relative;
+    z-index: 0;
+    top:-20px;
+    padding-top: 1em;
+    padding-bottom:1em ;
+    border-radius: 20px;
+    padding-left: .5em;
+    color: var(--PaleBlue);
+}
+.wdh, #pre-dayhrs, #mth-hrs, #pre-mth-hrs, #ply-hrs, #pdhr, #prv-dayplyhrs, #pre-plywk, #plymth {
+    display: none;
+}
+.background{
+    background-repeat: no-repeat;
+   background-position: right;
+    /* width:400px; */
+    height: 70px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    top:25px;
+   z-index: 0;
+  
+}
+#work{
+    padding: .5em;
+    font-weight: 500;
+}
+img{
+    padding-top: 1rem;
+}
+#whrs, #plywk,#wkstdy-hrs, #exwkhrs,#sc-wkhrs, #slf-wkhrs{
+    font-size: 30px;
+    padding-left: .4em;
+}
+#week-hrs{
+    font-size: 30px;
+}
+#light-blue{
+    background-image: url(images/icon-play.svg);
+    background-color: var(--play);
+}
+#green{
+    background-image: url(images/icon-exercise.svg);
+    background-color: var(--exercise);
+}
+#red{
+    background-image: url(images/icon-study.svg);
+    background-color: var(--study);
+}
+#purple{
+    background-image: url(images/icon-social.svg);
+    background-color: var(--social);
+}
+#gold{
+    background-image: url(images/icon-self-care.svg);
+    background-color: var(--orange);
+}
+.stdy, #stdy ,#shrs, #mthstdy, #exmthhrs, #premth-stdyhr, #spmhrs, #stdyhrs, #scpre-hrs{
+    display: none;
+}
+#exhrs, #ehrs, #preexhrs, #epdhrs, #exmth, #emhrs, #preex-mthhrs,
+#schrs, #scpre-hrs #scmth, #scmhrs, #presc-mthhrs, #scpmhrs, #socialhrs, #scmth{
+    display: none;
+}
+#spdhrs{
+    display: none;
+}
+#slfhrs, #preself-hrs, #slfmth-hrs, #slfpmhr, #slfc-hrs, #slfpdhrs, #preslf-mthhrs{
+    display: none;
+}
+@media (min-width:405px) {
+    
+    .grid{
+        gap:.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 auto;
+        max-width: 800px;
+        margin-top: 3em;
+    }
+    .one{
+        grid-column: 1;
+        grid-row: 1/3;
+        border-bottom-left-radius: 20px;
+    }
+   
+    .two{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .three{
+        grid-column:3 ;
+        grid-row: 1;
+    }
+    .four{
+        grid-column:4;
+        grid-row: 1;
+    }
+    .five{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .six{
+        grid-row:2 ;
+        grid-column: 3;
+    }
+    .seven{
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .flex{
+        flex-direction: column;
+        /* gap: px; */
+    }
+    .jerm{
+        flex-direction: column;
+        margin-top: 1.3em;
+        padding-bottom: 4rem;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 3px;
+    }
+ }

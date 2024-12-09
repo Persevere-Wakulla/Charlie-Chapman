@@ -1,0 +1,99 @@
+/* body-setings */
+body{
+    display: grid;
+   grid-template-columns:repeat(12 fr) ; 
+    grid-template-rows: repeat(12 fr);
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;    
+}
+/* header-settings */
+header{
+    background-image: url(flatlay-for-construction.jpg); 
+        grid-column: 1/ 13;
+        grid-row: 1/3;
+        font-size: 2em;
+    }
+    /* h1 */
+    h1{
+        background-color: yellow;
+    }
+    /* nav */
+nav {grid-column:1 /4 ;
+    grid-row: 3 / 10;
+    font-size: larger;
+    display: grid;
+    align-content:center;
+   background-color: yellow;
+   gap: 30px;
+}
+/* link */
+a{
+    color: black;
+}
+/* class .one */
+.one{
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    
+}
+/* class-.last */
+.last{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/* main-settings */
+main{
+    font-size: 1.5em;
+    grid-column: 4 / 10;
+    grid-row: 3/ 10;
+    padding: .5em;
+    color: yellow;
+    background-color: black;
+}
+/* label */
+ label{
+    background-color: yellow;
+    padding: .1em;
+ }
+     /*aside-info  */
+aside{
+     background-image: url(pointing-out-the-details.jpg); 
+    background-position: calc(100em);
+color: black;
+    grid-column: 10/ 12 ;
+    grid-row:3/10 ;
+    font-size: 2em;
+}
+/* button info */
+button{
+    background-color: black;
+    color: yellow;
+    padding: 1em;
+    border-radius: 50%;
+    margin-top: .8em;
+}
+
+    /* list-settings */
+
+ul{
+    padding-top: 2em;
+    list-style: none;
+    
+}
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: yellow;
+    grid-column: 1 / 13;
+    grid-row: 10 / 13;
+    background-color: black;
+}
+/* list-spacing */
+li{
+    padding-bottom: 20px;
+    padding-right: 5px;
+}

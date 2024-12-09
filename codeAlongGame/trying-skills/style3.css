@@ -1,0 +1,42 @@
+.box {
+    display: inline-block;
+    margin: 1em;
+    min-width: 6.5em;
+    line-height: 6.5em;
+    text-align: center;
+    transition: 7s ease-in-out;
+    border: 0.25em dotted;
+  }
+  
+  #box1:hover {
+    rotate: 90deg;
+  }
+  
+  #box2:hover {
+    rotate: y 180deg;
+  }
+  
+  #box3:hover {
+    rotate: 1 2 1 360deg;
+  }
+  #stripe.animate  {
+    transform: translate(-90%);
+    transition: transform 9s steps(9, start);
+  }
+  #digit {
+    width: .5em;
+    overflow: hidden;
+    font: 32px monospace;
+    cursor: pointer;
+  }
+  
+  #stripe {
+    display: inline-block
+  }
+  
+  #stripe.animate {
+    transform: translate(-90%);
+    transition-property: transform;
+    transition-duration: 9s;
+    transition-timing-function: steps(9, end);
+  }

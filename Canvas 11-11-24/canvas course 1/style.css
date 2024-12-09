@@ -1,0 +1,35 @@
+
+
+.typography-example-1 {
+    background-image: linear-gradient(135deg, #723362, #9d223c);
+    background-color: #9d223c;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    padding-left: .4em;
+    font-size: 1.8em;
+    margin-top: 2.5rem
+}
+
+.typography-example-1 span {
+    opacity: 0;
+    transition: opacity 1300ms
+}
+
+.typography-example-1 span:nth-child(1)  { transition-delay:  200ms }
+.typography-example-1 span:nth-child(2)  { transition-delay: 1200ms }
+.typography-example-1 span:nth-child(3)  { transition-delay:  800ms }
+.typography-example-1 span:nth-child(4)  { transition-delay:  300ms }
+.typography-example-1 span:nth-child(5)  { transition-delay:  700ms }
+.typography-example-1 span:nth-child(6)  { transition-delay:  600ms }
+.typography-example-1 span:nth-child(7)  { transition-delay:  400ms }
+.typography-example-1 span:nth-child(8)  { transition-delay:  900ms }
+.typography-example-1 span:nth-child(9)  { transition-delay:  700ms }
+.typography-example-1 span:nth-child(10) { transition-delay:   50ms }
+
+.typography-example-1:hover span {
+    opacity: 1
+}

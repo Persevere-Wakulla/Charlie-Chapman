@@ -1,0 +1,30 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.c-item{
+    height: 680px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.placeholder{
+    font-size: 18px;
+}
+
+ input,input::placeholder {
+    font-size: 1em;
+}
+.overview{
+    background-color: darkgray;
+    height: 280px;
+}
+
+.img-card{
+    /* height: 400px; */
+    /* width: 100%; */
+    object-fit: cover;
+}
+#flex{
+    gap: 20px;
+}

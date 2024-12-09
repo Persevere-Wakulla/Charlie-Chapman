@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;  
+}
+section{
+    border: 2px solid black;
+    text-align: center;
+    /* max-height:600em ; */
+}
+h4{
+  text-decoration: underline;
+  color: red;
+}
+.button{
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: .5em;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+
+img{
+  width: 50%;
+}
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+/* Control the left side */
+.left {
+    left: 0;
+    background-image: repeating-linear-gradient(green,black);
+    border-top-left-radius:20% ;
+    border-bottom-left-radius: 20%;
+    color: antiquewhite;
+  }
+  /* Control the right side */
+.right {
+    right: 0;
+    background-image: repeating-linear-gradient(black,green);
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+  }
+  /* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: antiquewhite;
+  }
+ /* .player{
+    padding: 1em;
+} */
+.head, #h3, .player, .section2{
+   letter-spacing: .5em;
+   margin-bottom: 1em;
+   font-size: 32px;
+   font-weight: 900;
+  }
+  .pot{
+    font-size: 32px;
+    letter-spacing: .5em;
+    margin-top: 2em;
+    font-weight: 900;
+  }
+  .bet{
+    padding: .5em;
+    border-radius: 50%;
+    font-size: 24px;
+}
+.betting-area{
+      flex-direction: row;
+      display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+  }
+  .flex{
+    display: flex;
+  }
+
+  .btn1{
+     padding: 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+    background-image: linear-gradient(white,black);
+    color: antiquewhite;
+    font-weight: 900;
+    font-size: 20px;
+    box-shadow: 0 9px #999; 
+  }
+  .btn:hover {background-color: #3e8e41}
+
+  .btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  #new-game{
+    color: red;
+    font-size:30px ;
+    border: none;
+  }
+  #amount{
+    padding-top: .9em;
+    font-size: 32px;
+    letter-spacing: .1em;
+  }
+  

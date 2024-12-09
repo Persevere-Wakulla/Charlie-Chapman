@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="exploding-text">
+        <span class="letter" style="animation-delay: 0s;">E</span>
+        <span class="letter" style="animation-delay: 0.1s;">x</span>
+        <span class="letter" style="animation-delay: 0.2s;">p</span>
+        <span class="letter" style="animation-delay: 0.3s;">l</span>
+        <span class="letter" style="animation-delay: 0.4s;">o</span>
+        <span class="letter" style="animation-delay: 0.5s;">d</span>
+        <span class="letter" style="animation-delay: 0.6s;">i</span>
+        <span class="letter" style="animation-delay: 0.7s;">n</span>
+        <span class="letter" style="animation-delay: 0.8s;">g</span>
+        <span class="letter" style="animation-delay: 0.9s;"> </span>
+        <span class="letter" style="animation-delay: 1s;">T</span>
+        <span class="letter" style="animation-delay: 1.1s;">e</span>
+        <span class="letter" style="animation-delay: 1.2s;">x</span>
+        <span class="letter" style="animation-delay: 1.3s;">t</span>
+    </div>
+
+    <div class="rating">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
+    <!-- <div class="grid">
+            <div class="grid-item"><h2>1</h2></div>
+            <div class="grid-item"><h2>2</h2></div>
+            <div class="grid-item"><h2>3</h2></div>
+            <div class="grid-item"><h2>4</h2></div>
+            <div class="grid-item"><h2>5</h2></div>
+            <div class="grid-item"><h2>6</h2></div>
+            <div class="grid-item"><h2>7</h2></div>
+            <div class="grid-item"><h2>8</h2></div>
+            <div class="grid-item"><h2>9</h2></div>
+            <div class="grid-item"><h2>10</h2></div>
+            <div class="grid-item"><h2>11</h2></div>
+            <div class="grid-item"><h2>12</h2></div>
+        </div> -->
+
+    <!-- <div class="circle-grid">
+            <div class="grid-item" style="--i: 0;"><h2>1</h2></div>
+            <div class="grid-item" style="--i: 1;"><h2>2</h2></div>
+            <div class="grid-item" style="--i: 2;"><h2>3</h2></div>
+            <div class="grid-item" style="--i: 3;"><h2>4</h2></div>
+            <div class="grid-item" style="--i: 4;"><h2>5</h2></div>
+            <div class="grid-item" style="--i: 5;"><h2>6</h2></div>
+            <div class="grid-item" style="--i: 6;"><h2>7</h2></div>
+            <div class="grid-item" style="--i: 7;"><h2>8</h2></div>
+            <div class="grid-item" style="--i: 8;"><h2>9</h2></div>
+            <div class="grid-item" style="--i: 9;"><h2>10</h2></div>
+            <div class="grid-item" style="--i: 10;"><h2>11</h2></div>
+            <div class="grid-item" style="--i: 11;"><h2>12</h2></div>
+            <div class="grid-item" style="--i: 12;"><h2>13</h2></div>
+            <div class="grid-item" style="--i: 13;"><h2>14</h2></div>
+            <div class="grid-item" style="--i: 14;"><h2>15</h2></div>
+            <div class="grid-item" style="--i: 15;"><h2>16</h2></div>
+            <div class="grid-item" style="--i: 16;"><h2>17</h2></div>
+            <div class="grid-item" style="--i: 17;"><h2>18</h2></div>
+            <div class="grid-item" style="--i: 18;"><h2>19</h2></div>
+            <div class="grid-item" style="--i: 19;"><h2>20</h2></div>
+            <div class="grid-item" style="--i: 20;"><h2>21</h2></div>
+            <div class="grid-item" style="--i: 21;"><h2>22</h2></div>
+            <div class="grid-item" style="--i: 22;"><h2>23</h2></div>
+            <div class="grid-item" style="--i: 23;"><h2>24</h2></div>
+            <div class="grid-item" style="--i: 24;"><h2>25</h2></div>
+            <div class="grid-item" style="--i: 25;"><h2>26</h2></div>
+            <div class="grid-item" style="--i: 26;"><h2>27</h2></div>
+            <div class="grid-item" style="--i: 27;"><h2>28</h2></div>
+            <div class="grid-item" style="--i: 28;"><h2>29</h2></div>
+            <div class="grid-item" style="--i: 29;"><h2>30</h2></div>
+            <div class="grid-item" style="--i: 30;"><h2>31</h2></div>
+            <div class="grid-item" style="--i: 31;"><h2>32</h2></div>
+            <div class="grid-item" style="--i: 32;"><h2>33</h2></div>
+            <div class="grid-item" style="--i: 33;"><h2>34</h2></div>
+            <div class="grid-item" style="--i: 34;"><h2>35</h2></div>
+            <div class="grid-item" style="--i: 35;"><h2>36</h2></div>
+        </div>    -->
+    <!-- <div class="slider">
+            <div class="cube">
+                <div class="face face1"><img src="https://via.placeholder.com/300x300?text=Image+1" alt="Image 1"></div>
+                <div class="face face2"><img src="https://via.placeholder.com/300x300?text=Image+2" alt="Image 2"></div>
+                <div class="face face3"><img src="https://via.placeholder.com/300x300?text=Image+3" alt="Image 3"></div>
+                <div class="face face4"><img src="https://via.placeholder.com/300x300?text=Image+4" alt="Image 4"></div>
+                <div class="face face5"><img src="https://via.placeholder.com/300x300?text=Image+5" alt="Image 5"></div>
+                <div class="face face6"><img src="https://via.placeholder.com/300x300?text=Image+6" alt="Image 6"></div>
+            </div>
+        </div> -->
+
+    <!-- <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="https://via.placeholder.com/300x300?text=Image+1" alt="Image 1"></div>
+                <div class="slide"><img src="https://via.placeholder.com/300x300?text=Image+2" alt="Image 2"></div>
+                <div class="slide"><img src="https://via.placeholder.com/300x300?text=Image+3" alt="Image 3"></div>
+                <div class="slide"><img src="https://via.placeholder.com/300x300?text=Image+4" alt="Image 4"></div>
+            </div>
+        </div> -->
+
+    <!-- <div class="slider-container">
+            <div class="slider">
+                <div class="slide">Slide 1</div>
+                <div class="slide">Slide 2</div>
+                <div class="slide">Slide 3</div>
+                <div class="slide">Slide 4</div>
+                <div class="slide">Slide 5</div>
+            </div>
+        </div> -->
+
+
+
+    <div class="diamond-grid">
+        <div class="diamond">1</div>
+        <div class="diamond">2</div>
+        <div class="diamond">3</div>
+        <div class="diamond">4</div>
+        <div class="diamond">5</div>
+        <div class="diamond">6</div>
+        <div class="diamond">7</div>
+        <div class="diamond">8</div>
+        <div class="diamond">9</div>
+        <div class="diamond">10</div>
+        <div class="diamond">11</div>
+        <div class="diamond">12</div>
+        <div class="diamond">13</div>
+        <div class="diamond">14</div>
+        <div class="diamond">15</div>
+        <div class="diamond">16</div>
+        <div class="diamond">17</div>
+        <div class="diamond">18</div>
+        <div class="diamond">19</div>
+        <div class="diamond">20</div>
+    </div>
+
+
+
+    <div class="typewriter">
+        <span class="line">Hello, world!</span>
+        <span class="line">This is a multi-line</span>
+        <span class="line">CSS-only typewriter effect.</span>
+        <span class="line">Isn't it cool?</span>
+    </div>
+
+    <!-- 
+    <div class="cube-container">
+        <div class="cube">
+            <div class="face front">
+                <img src="./Bichon-Frise-PUCCI-Cafe.jpg" alt="Front">
+            </div>
+            <div class="face back">
+                <img src="./chinese sharpei.jpg" alt="Back">
+            </div>
+            <div class="face left">
+                <img src="./Maltese.jpg" alt="Left">
+            </div>
+            <div class="face right">
+                <img src="./Miniature Schnauzer.jpg" alt="Right">
+            </div>
+            <div class="face top">
+                <img src="YorkieCDS-639708906-scaled.jpg" alt="Top">
+            </div>
+            <div class="face bottom">
+                <img src="./Miniature Schnauzer.jpg" alt="Bottom">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="slider">
+        <div class="slider-inner">
+            <div class="slide front"><img src="./chinese sharpei.jpg" alt=""></div>
+            <div class="slide back"><img src="./Maltese.jpg" alt=""></div>
+        </div>
+    </div> -->
+    <div class="star-rating" aria-label="Rating">
+        <span class="star" data-value="5">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="1">★</span>
+    </div>
+
+    <p class="mt-4 text-center text-gray-600">Click on the stars to rate. Your rating will be saved until the page is
+        refreshed.</p>
+
+
+    <!-- <div class="falling-text">Watch me fall!</div> -->
+
+    <div class="domino-container">
+        <div class="domino">D</div>
+        <div class="domino">O</div>
+        <div class="domino">M</div>
+        <div class="domino">I</div>
+        <div class="domino">N</div>
+        <div class="domino">O</div>
+        <div class="domino">E</div>
+        <div class="domino">F</div>
+        <div class="domino">F</div>
+        <div class="domino">E</div>
+        <div class="domino">C</div>
+        <div class="domino">T</div>
+    </div>
+
+    <div class="roller">
+        <div class="roll-text">This is a rolling text effect using only HTML and CSS. It keeps scrolling indefinitely!
+        </div>
+    </div>
+
+    <div class="roller-coaster">
+        <div class="coaster-text">Welcome to the Roller Coaster of Text!</div>
+    </div>
+
+    <div class="jumping-text">
+        <span>J</span><span>u</span><span>m</span><span>p</span><span>i</span><span>n</span><span>g</span>
+        <span> </span><span>T</span><span>e</span><span>x</span><span>t</span>
+    </div>
+    <div class="container">
+        <div class="text-3d">3D Text</div>
+    </div>
+
+
+    <div class="container">
+        <div class="text-spin">Spinning Text</div>
+    </div>
+
+    <!-- <div class="carousel" aria-label="3D Carousel with 9 panels">
+            <div class="carousel-inner">
+                <div class="panel">1</div>
+                <div class="panel">2</div>
+                <div class="panel">3</div>
+                <div class="panel">4</div>
+                <div class="panel">5</div>
+                <div class="panel">6</div>
+                <div class="panel">7</div>
+                <div class="panel">8</div>
+                <div class="panel">9</div>
+            </div>
+        </div> -->
+    <div class="carousel" aria-label="3D Carousel with 7 image panels">
+        <div class="carousel-inner">
+            <div class="panel"><img src="./Bichon-Frise-PUCCI-Cafe.jpg" alt="Image 1"></div>
+            <div class="panel"><img src="./chinese sharpei.jpg" alt="Image 2"></div>
+            <div class="panel"><img src="./Maltese.jpg" alt="Image 3"></div>
+            <div class="panel"><img src="./Boston-terrier-dog-on-brown-terrace_bubutu_Shutterstock.jpg" alt="Image 5">
+            </div>
+            <div class="panel"><img src="./Miniature Schnauzer.jpg" alt="Image 5"></div>
+            <div class="panel"><img src="./YorkieCDS-639708906-scaled.jpg" alt="Image 6"></div>
+            <div class="panel"><img src="./pekingese-76185_1280.jpg" alt="Image 7"></div>
+        </div>
+    </div>
+
+
+    <div class="box" aria-label="Rotating 3D image box">
+        <div class="face front"><img src="./Miniature Schnauzer.jpg" alt="Front face"></div>
+        <div class="face back"><img src="./Affenpincher.webp" alt="Back face"></div>
+        <div class="face left"><img src="./Boston-terrier-dog-on-brown-terrace_bubutu_Shutterstock.jpg" alt="Left face">
+        </div>
+        <div class="face right"><img src="./pekingese-76185_1280.jpg" alt="Right face"></div>
+        <div class="face top"><img src="./YorkieCDS-639708906-scaled.jpg" alt="Top face"></div>
+        <div class="face bottom"><img src="./chinese sharpei.jpg" alt="Bottom face"></div>
+    </div>
+
+    <div class="card" aria-label="Animated card flip example">
+        <div class="card-inner">
+            <div class="card-side card-front">Front</div>
+            <div class="card-side card-back">Back</div>
+        </div>
+    </div>
+
+
+    <div class="carousel1" aria-label="4-panel horizontal image carousel">
+        <div class="carousel-inner1">
+            <div class="carousel-item1"><img src="./Bichon-Frise-PUCCI-Cafe.jpg" alt="Image 1"></div>
+            <div class="carousel-item1"><img src="./Maltese.jpg" alt="Image 2"></div>
+            <div class="carousel-item1"><img src="./YorkieCDS-639708906-scaled.jpg" alt="Image 3"></div>
+            <div class="carousel-item1"><img src="./Affenpincher.webp" alt="Image 4"></div>
+        </div>
+    </div>
+
+
+    <div class="slinky-container" aria-label="Slinky animation">
+        <div class="slinky-coil"></div>
+        <div class="slinky-coil"></div>
+        <div class="slinky-coil"></div>
+        <div class="slinky-coil"></div>
+        <div class="slinky-coil"></div>
+        <div class="slinky-coil"></div>
+        <div class="slinky-coil"></div>
+    </div>
+    <div class="container">
+        <div class="domino" style="animation-delay: 0s;">D</div>
+        <div class="domino" style="animation-delay: 0.1s;">O</div>
+        <div class="domino" style="animation-delay: 0.2s;">M</div>
+        <div class="domino" style="animation-delay: 0.3s;">I</div>
+        <div class="domino" style="animation-delay: 0.4s;">N</div>
+        <div class="domino" style="animation-delay: 0.5s;">O</div>
+    </div>
+    <div class="magazine">
+        <div class="cover">
+            <div class="front">
+                Yaminah
+            </div>
+            <div class="folded">
+                Ashir
+            </div>
+        </div>
+        <div class="content">
+            <h1>Chapman Magazine</h1>
+            <p>Hover over the magazine to see the fold effect!</p>
+
+        </div>
+    </div>
+    <div class="border-gradient div"></div>
+
+
+    <div class="ascending-fading-text">Welcome to My Website</div>
+    <div class="flaming-text">
+        <span>Flaming</span>
+        <span class="flame"></span>
+        <span>Text</span>
+        <span class="flame"></span>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="hologram"></div>
+            <div class="card-content">
+                <h2>HoloCard</h2>
+                <p>Level:🧙🏽‍♂️ 99 🦸🏽‍♂️</p>
+                <p>Power🪫</p>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="./pekingese-76185_1280.jpg" alt="3D Effect Example" class="image">
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

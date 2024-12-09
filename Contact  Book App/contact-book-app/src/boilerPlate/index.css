@@ -1,0 +1,244 @@
+/* ! UserGreetingCss */
+/* .students{
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+} */
+
+/* .welcome{
+  font-size: 2.5em;
+  background-color: hsl(120, 100%, 42%);
+  color: blueviolet;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+
+}
+
+.log{
+  font-size: 2.5em;
+  color:hsl(120, 100%, 42%) ;
+  background-color:blueviolet ;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+
+} */
+
+/* ! list */
+
+/* .list-category{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: olivedrab;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  background-color: navajowhite;
+}
+
+.list-items li{
+  font-size: 2em;
+  color: darkolivegreen;
+  text-align: center;
+  margin: 0;
+}
+
+.list-items li:hover{
+  color:rgb(126, 161, 64) ;
+  cursor: grab;
+} */
+
+/* ! profilePicture */
+/* .img{
+  width: 50%;
+} */
+
+/* ! ColorPicker */
+
+/* body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-picker{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  margin: 50px;
+  font-size: 3rem;
+}
+
+.color-display{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 5px solid lightslategray;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  transition: 0.25 ease;
+  box-shadow: inset 0 1px 0 hsl(224, 84%, 74%);
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
+
+
+}
+p{
+  padding-left: 50px;
+  font-size: 1.5rem;
+}
+label{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+ 
+input[type="color"]{
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10%;
+  border: 3px solid lightslategray;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
+  box-shadow: inset 0 1px 0 hsl(224, 84%, 74%);
+
+} */
+
+/* ! To-DO-List */
+/* 
+body{
+  background-color: hsla(0, 2%, 40%, 0.894);
+}
+.toDoList{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1{
+  font-size: 4rem;
+  color: darkblue;
+  font-weight: bolder;
+}
+
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: red;
+  border: none;
+  border-radius:5px ;
+  cursor: crosshair;
+  transition: background-color 0.5s ease ;
+  margin-right: 4px;
+  margin-bottom: 3px;
+}
+
+.add-btn{
+  background-color: darkgray;
+}
+.add-btn:hover{
+  background-color: hsl(0, 0%, 56%);
+}
+
+.delete-btn{
+  background-color: red;
+  color: darkgray;
+}
+.delete-btn:hover{
+  background-color: hsl(0, 100%, 40%);
+}
+
+.moveUP-btn{
+  background-color: darkblue;
+  
+  color: darkgray;
+}
+.moveUP-btn:hover{
+  background-color: hsl(240, 100%, 37%);
+}
+
+.moveDown-btn{
+  background-color: darkblue;
+  color: darkgray;
+}
+.moveDown-btn:hover{
+  background-color: hsl(240, 100%, 37%);
+}
+
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid darkgray ;
+  border-radius: 5px;
+  color:darkblue ;
+}
+
+ol{
+  padding: 0;
+  
+
+}
+
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  color: darkgray;
+  background-color: darkblue;
+  margin-bottom: 10px;
+  border: 3px solid darkgray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+}
+
+.text{
+  flex: 1;
+  /* flex-shrink: 1;
+  flex-basis: 0%; */
+
+
+/* ! Digital Clock*/
+body {
+  height: 100vh;
+  background-image: url('src/assets/pexels-steve-johnson-1143758.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  
+}
+
+.clock-container{
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  width: 100vw;
+  padding: 10px 0;
+}
+
+.clock{
+  text-align: center;
+  font-size: 10vw;
+  font-weight: bold;
+  font-family: monospace;
+  color: crimson;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.85);
+}
+.minCount{
+  color: hsla(0, 10%, 16%, 0.824);
+}
+
+.seconds{
+  color: darkgreen;
+
+}

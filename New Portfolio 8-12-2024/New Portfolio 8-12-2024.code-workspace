@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"name": "New Portfolio 8-12-2024",
+		"path": "."
+	},
+	{
+		"name": "JavascriptClock",
+		"path": "../Chapman,Charlie/JavascriptClock"
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5503,
+    "liveServer.settings.multiRootWorkspaceName": "New Portfolio 8-12-2024"
+  }
+}

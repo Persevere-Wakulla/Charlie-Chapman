@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 5px;
+    color: aqua;
+    box-shadow: 0 0 10px 2px;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn{
+    background-color: aquamarine;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: blue;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: darkblue;
+    color: aquamarine;
+}

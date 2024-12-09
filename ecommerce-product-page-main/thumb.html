@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <link rel="stylesheet" href="thumb.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+      <div id="flex">
+        <div id="myNav" class="overlay">
+          <img src="images/icon-menu.svg" alt="menu" class="menu img">
+
+        </div>
+        <img src="images/logo.svg" alt="" class="logo img">
+        <div>
+            <img src="images/icon-cart.svg" alt="" class="cart img">
+            <img src="images/image-avatar.png" alt="" class="avatar img">
+        </div>
+    </div>
+    </nav>
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">
+          </div>
+            <img src="images/image-product-1.jpg" alt >
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">
+          </div>
+            <img src="images/image-product-2.jpg" alt="">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">
+          </div>
+            <img src="images/image-product-3.jpg" alt="">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">
+          </div>
+            <img src="images/image-product-4.jpg" alt="">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="images/image-product-1.jpg"  onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/image-product-2-thumbnail.jpg"  onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+        </div>
+      </div>
+      <main id="main">
+        <span class="sneaker">
+          Sneaker Company
+        </span>
+        <h2>
+          Fall Limited Edition Sneakers
+        </h2>
+        <p id="description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="prices">
+          <!-- <div> -->
+            <h3 id="price">
+              $125.00
+            </h3>
+            <p id="discount">
+              50%
+            </p>
+            <!-- </div> -->
+            <s>
+              $250.00
+            </s>
+          </div>
+          <div class="flex">
+            <img src="images/icon-minus.svg" alt="minus" class="btn minus">
+            <p id="counter"></p>
+            <img src="images/icon-plus.svg" alt="plus" class="btn plus">
+          </div>
+          <button type="button" class="add_to_cart"><img src="images/icon-cart.svg" id="cart-btn" alt=""> Add to cart</button>
+        </main>
+    <script src="thumb.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+av{
+    display: flex;
+    /* gap: 1em; */
+    padding: .5rem;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 100vh; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: rgb(8 8 8 / 70%); /* Black*/
+    opacity: initial;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    margin-bottom: 3em;
+    color: var(--white);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 56px;
+    margin-left: 50px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+article{
+
+   padding: 1em; 
+   line-height: 1.5em;
+  text-align: center;
+}
+#first-line{
+    font-size: 28px;
+    letter-spacing:4.75px ;
+    margin-top: 4em;
+    padding-bottom: 2em;
+}
+#space{
+    font-size: 62px;
+    padding-bottom: 1.5em;
+}
+.exp{
+   background-color: white;
+   color: black;
+   padding: 3em;
+   max-width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   position: absolute;
+   left: 10em;
+   top: 32em;
+
+}
+.exp:hover{
+    border: 44px solid gray;
+}
+.explore{
+    position: absolute;
+    left: 2em;
+    top: 3em;
+}
+.expBtn{
+    border: none;
+    background-color: var(--white);
+}
+
+
+
+body{
+  background-image: url(assets/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+ color: azure;
+ /* margin: 0 auto; */
+}
+nav{
+  display: flex;
+  /* gap: 1em; */
+  padding: .5rem;
+ align-items: flex-start;
+ justify-content: space-between;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: rgb(8 8 8 / 70%); /* Black*/
+  opacity: initial;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  margin-bottom: 3em;
+  color: var(--white);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 56px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+article{
+
+ padding: 1em; 
+ line-height: 1.5em;
+text-align: center;
+}
+#first-line{
+  font-size: 28px;
+  letter-spacing:4.75px ;
+  margin-top: 4em;
+  padding-bottom: 2em;
+}
+#space{
+  font-size: 62px;
+  padding-bottom: 1.5em;
+}
+.exp{
+ background-color: white;
+ color: black;
+ padding: 3em;
+ max-width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ position: absolute;
+ left: 10em;
+ top: 32em;
+
+}
+.exp:hover{
+  border: 44px solid gray;
+}
+.explore{
+  position: absolute;
+  left: 2em;
+  top: 3em;
+}
+.expBtn{
+  border: none;
+  background-color: var(--white);
+}

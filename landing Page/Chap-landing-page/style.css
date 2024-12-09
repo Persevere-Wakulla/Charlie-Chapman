@@ -1,0 +1,85 @@
+/* body{
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(footsteps-left-in-sand-dunes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    
+}
+fieldset{
+    margin: 0 auto;
+    border-color: cyan;
+    color: cyan;
+font-size: 20px;
+padding-top: .8em;
+box-shadow: 10px 10px 10px black;
+}
+
+.first-paragraph::first-letter {
+    float: left;
+    font-size: 3em;
+    line-height: .6em;
+ 
+}
+
+ .first-paragraph , .second{
+    margin: 0 auto;
+    width:8em;
+    line-height:1.5em;
+    font-size: 25px;
+    background-color: cyan;
+    padding: 1em;
+    border-radius: 20px;
+    
+ }
+ h3{
+    padding-bottom: .8em;
+ }
+ .second::first-letter {
+   float: left;
+   font-size: 3em;
+   line-height: .6em;
+ }
+ 
+ button{
+    background-color:cyan;
+    padding: 1em;
+    margin-left: .5em;
+    border-radius: 50%;
+ }
+
+ 
+footer{
+    
+    margin-top: 8em;
+}
+.flex-col {
+    display: flex;
+}
+ul{
+    list-style: none;
+    color: cyan;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    padding-right: 3em;
+    font-size: 25px;
+   
+}
+a{
+    display: flex;
+    justify-content:center;
+    color: black;
+    background-color: cyan;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+}
+.last{
+    color: cyan;
+}
+mark{
+    background-color: cyan;
+} */

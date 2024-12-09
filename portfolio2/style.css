@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    text-align: center;
+}
+.clock {
+    --_ow: clamp(5rem, 60vw, 40rem);
+    --_w:422px;
+    --_r: calc(var(--_w) / 2);
+    aspect-ratio: 1;
+    background-color: tomato;
+    border-radius: 50%;
+    container-type: inline;
+    display: grid;
+    height: var(--_ow);
+    place-content: center;
+    position: relative;
+    width var(--_ow);
+    /* --_x: calc(var(--_r) + (var(--_r) * cos(var(--_d))));
+    --_y: calc(var(--_r) + (var(--_r) * sin(var(--_d)))); */
+}
+.clock time:nth-child(1) { --_d: 270deg; }
+.clock time:nth-child(2) { --_d: 300deg; }
+.clock time:nth-child(3) { --_d: 330deg; }
+.clock time:nth-child(4) { --_d: 0deg; }
+.clock time:nth-child(5) { --_d: 30deg; }
+.clock time:nth-child(6) { --_d: 60deg; }
+.clock time:nth-child(7) { --_d: 90deg; }
+.clock time:nth-child(8) { --_d: 120deg; }
+.clock time:nth-child(9) { --_d: 150deg; }
+.clock time:nth-child(10) { --_d: 180deg; }
+.clock time:nth-child(11) { --_d: 210deg; }
+.clock time:nth-child(12) { --_d: 240deg; }
+.clock-face time {
+    --_x: calc(var(--_r) + (var(--_r) * cos(var(--_d))));
+    --_y: calc(var(--_r) + (var(--_r) * sin(var(--_d))));
+    --_sz: 12cqi;
+    display: grid;
+    height: var(--_sz);
+    left: var(--_x);
+    place-content: center;
+    position: absolute;
+    top: var(--_y);
+    width: var(--_sz);
+}
+.arm {
+    background-color: var(--_abg);
+    border-radius: calc(20px);
+    display: block;
+    height: var(--_ah);
+    left: calc((var(--_w) - var(--_aw)) / 2);
+    position: absolute;
+    top: calc((var(--_w) / 2) - var(--_ah));
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    width: var(--_aw);
+    animation: turn 43200s infinite;
+  }
+  
+  @keyframes turn {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  .seconds {
+    --_abg: hsl(0, 5%, 40%);
+    --_ah: 145px;
+    --_aw: 2px;
+    animation: turn 60s steps(60, end) infinite;
+  }
+  .minutes {
+    --_abg: #333;
+    --_ah: 145px;
+    --_aw: 6px;
+    animation: turn 3600s steps(60, end) infinite;
+  }
+  .hours {
+    --_abg: #333;
+    --_ah: 110px;
+    --_aw: 6px;
+    animation: turn 43200s linear infinite;
+  }

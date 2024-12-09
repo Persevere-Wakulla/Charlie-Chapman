@@ -1,0 +1,46 @@
+{
+    "careers":[
+        {
+            "id":1,
+            "title": "Senior React Developer",
+            "salary":50000  ,
+            "location": "Sarasota, Fl"
+        },
+        {
+            "id":2,
+            "title": "Block Burner",
+            "salary":200000  ,
+            "location": "Bradenton, Fl"
+        },
+        {
+            "id":3,
+            "title": "Factory worker",
+            "salary":30000  ,
+            "location": "Tampa, fl"
+        },
+        {
+            "id":4,
+            "title": "Baseball Player",
+            "salary":350000  ,
+            "location": "St Pete, fl"
+        },
+        {
+            "id":5,
+            "title": "Fisherman",
+            "salary":50000  ,
+            "location": "FT Myers, FL"
+        },
+        {
+            "id":6,
+            "title": "Prison Gaurd",
+            "salary":30000  ,
+            "location": "Port Charlotte, Fl"
+        },
+        {
+            "id":7,
+            "title": "Farm worker",
+            "salary":25000  ,
+            "location": "Arcadia, Fl"
+        }
+    ]
+}

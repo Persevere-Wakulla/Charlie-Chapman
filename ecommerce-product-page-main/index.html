@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="ecommerce.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="flex hero">
+      <div id="dropdown">
+        <button type="submit" class="btn">
+          <img src="images/icon-menu.svg" alt="menu-icon" id="menu">
+        </button>
+        <div class="dropdown-content">
+          <ul id="links">
+            <li>Collections</li>
+            <li>
+              <a href="index.html">Men</a>
+            </li>
+            <li>
+              <a href="">Women</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="nav">
+          <img src="images/logo.svg" alt="logo" id="logo">
+          <!-- <div class="cartinfo"> -->
+            <!-- <div id="cartelem"> -->
+              <img src="images/icon-cart.svg" alt="cart" id="cart">
+              <div class="cart">0</div>
+            <!-- </div> -->
+       <!-- </div> -->
+          <img src="images/image-avatar.png" alt="" id="avatar">
+        </div>
+  </nav>
+  <div class="grid">
+
+    <header id="img_gallery">
+      <div class="head">
+        <div class=" modal-overlay">
+          <p class="cartbanner">Cart</p>
+          <img src="images/icon-close.svg" alt="" id="close">
+          <hr>
+          <div class="overlay">
+            <img src="images/image-product-1-thumbnail.jpg" alt="shoe" id="thumb">
+            <p id="overlay-para">Fall Limited Edition Sneakers $125 x <span id="span"> </span> $ <span id="span2">  </span> </p>
+            <!-- <div class="modal-container"> -->
+              <img src="images/icon-delete.svg" alt="delete" id="deletebtn">
+            </div>
+            <button type="button" class="checkout">checkout</button>
+          </div>
+          <img src="images/image-product-1.jpg" alt="sneakers" id="img-holder">
+          <div class="position">
+            <div class="arrow">
+              <img src="images/icon-previous.svg"  alt="previous" id="back"  >
+            </div>
+            <div class="arrow">
+              <img src="images/icon-next.svg" alt="next" id="forward">
+            </div>
+          </div>
+        </div>
+        <div id="row">
+            <div class="column">
+              <img src="images/image-product-1-thumbnail.jpg" alt="thumb1" class="demo cursor" id="thumb1">
+            </div>
+            <div class="column">
+              <img src="images/image-product-2-thumbnail.jpg" alt="thum2" class="demo cursor" id="thumb2">
+            </div>
+            <div class="column">
+              <img src="images/image-product-3-thumbnail.jpg" alt="thum3" class="demo cursor"  id="thumb3">
+            </div>
+            <div class="column">
+              <img src="images/image-product-4-thumbnail.jpg" alt="thum4" class="demo cursor"  id="thumb4">
+            </div>
+        </div>
+      </header>
+      <main id="main">
+        <span class="sneaker">
+          Sneaker Company
+        </span>
+        <h2>
+          Fall Limited Edition Sneakers
+        </h2>
+        <p id="description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="prices">
+          <!-- <div> -->
+            <h3 id="price">
+              $125.00
+            </h3>
+            <p id="discount">
+              50%
+            </p>
+            <!-- </div> -->
+            <s>
+              $250.00
+            </s>
+          </div>
+          <div class="flex">
+            <img src="images/icon-minus.svg" alt="minus" id="minusBtn" class="btn minus">
+            <p id="counter"></p>
+            <img src="images/icon-plus.svg" alt="plus" id="plusBtn" class="btn plus">
+          </div>
+          <button type="button" class="add_to_cart"><img src="images/icon-cart.svg" id="cart-btn" alt=""> Add to cart</button>
+        </main>
+      </div>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">CJ<sup>2</sup></a>.
+  </div>
+  <script src="ecommerce.js"></script>
+</body>
+
+</html>

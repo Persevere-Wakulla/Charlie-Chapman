@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="tech.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<!-- body -->
+<body>
+  <!-- nav with links -->
+  <nav>
+    <img src="assets/shared/logo.svg" alt="logo" id="logo">
+    <div class="flex sidepanel" id="mySidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./index.html" class="link" id="home">00 Home</a>
+      <a href="./destination-moon.html" class="link" id="destination">01 Destination</a>
+      <a href="./crew-commander.html" class="link" id="crew">02 Crew</a>
+      <a href="./technology-vehicle.html" class="link" id="tech">03 Technology</a>
+    </div>
+    <!-- btn with img -->
+    <button type="button" onclick="openNav()" class="openbtn"> <img src="assets/shared/icon-hamburger.svg" alt=""
+        id="menu"></button>
+  </nav>
+  <!-- main -->
+  <main>
+    <p class="title"><span class="num">03 </span> Space launch 101</p>
+    <!-- article -->
+    <article>
+      <!-- div for displaying -->
+      <div class="grid">
+        <!-- div with nums for js -->
+        <div class="first">
+        <p class="one circle"> &#9312;</p>
+        <p class="two circle"> &#9313;</p>
+        <p class="three circle">&#9314;</p>
+      </div>
+      <!-- div with text -->
+      <div class="second">
+        <p class="term">
+          <span class="lV">Launch vehicle</span>
+        </p>
+        <p class="tech-para">
+        A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+        payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+        WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+          it's quite an awe-inspiring sight on the launch pad!
+        </p>
+      </div>
+      </div>
+      <!-- img -->
+      <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="" class="tech">
+    </article>
+  </main>
+  <!-- js script link -->
+  <script src="tech.js"></script>
+</body>
+
+</html>

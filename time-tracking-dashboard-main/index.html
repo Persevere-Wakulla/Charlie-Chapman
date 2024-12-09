@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <!-- <header> -->
+
+      <section class="one">
+        <div class="jerm">
+          <!-- guy -->
+          <img src="images/image-jeremy.png" alt="pic-of-jeremy" class="jr">
+          <div class="name">
+            <p>Report for</p> <span>Jeremy Robson</span>
+          </div>
+        </div>
+        <!-- nav -->
+        <div class="flex">
+          <span id="day"> Daily</span>
+          <span id="week">Weekly</span>
+          <span id="month">Monthly</span>
+        </div>
+      </section>
+    <!-- </header> -->
+    <!-- <main> -->
+      <!-- cards -->
+      <section id="two">
+        <!-- card 1 -->
+        <div id="orange" class="background"></div>
+        <!-- div for background img -->
+        <div class="card">
+        <div> Work
+          <img src="images/icon-ellipsis.svg" alt="dots"></div>
+          <!-- <div id="hrs"> -->
+          <!-- span for work day hours -->
+          <p class="wdh"><span id="day_hrs">
+              5</span> hrs</p> <!-- daily -->
+          <p id="pre-dayhrs">
+            <!-- span for pre work day hrs -->
+            Previous - <span id="dyhrs">7 </span> hrs <!-- daily -->
+          </p>
+          <p id="week-hrs">
+            <!-- span for work day hrs -->
+            <span id="whrs">32</span> hrs <!-- weekly -->
+          </p>
+          <p id="pre-weekhrs">
+            <!-- span for pre work week hrs -->
+            Previous - <span id="pwwhrs">36</span> hrs <!-- weekly -->
+          </p>
+          <p id="mth-hrs">
+            <!-- span for work month hours -->
+            <span id="mthhrs">103</span> hrs <!-- monthly -->
+          </p>
+          <p id="pre-mth-hrs">
+            <!-- span for pre work month hours -->
+            Previous - <span id="premth">128</span> hrs <!-- monthly -->
+          </p>
+          <!-- </div> -->
+        </div>
+      </section>
+      <section class="three">
+        <div id="light-blue" class="background"></div>
+        <div class="card">
+          <div>
+          Play
+          <img src="images/icon-ellipsis.svg" alt="dots"></div>
+          <p id="ply-hrs">
+            <!-- span for play day hrs -->
+            <span id="pdhr">1</span> hr <!-- daily -->
+          </p>
+          <p id="prv-dayplyhrs">
+            <!-- span for play pre day hrs  -->
+            Previous - <span id="ppdhrsa">2</span> hrs <!-- daily -->
+          </p>
+          <p id="plywk">
+            <!-- span for play week hrs -->
+            <span id="pwkhrs">10</span>
+            hrs <!-- weekly -->
+          </p>
+          <p id="pre-plywk">
+            <!-- span for play pre week hrs -->
+            Previous - <span id="ppwhrs">8</span> hrs <!-- weekly -->
+          </p>
+          <p id="plymth">
+            <!-- span for play mth hrs -->
+            <span id="pmhrs">23</span>
+            hrs <!-- monthly -->
+          </p>
+          <p id="pre-plymth">
+            <!-- span for play pre month hrs -->
+            Previous - <span id="ppmthhrs">8</span> hrs <!-- monthly -->
+          </p>
+        </div>
+      </section>
+      <section class="four">
+        <div id="red" class="background"></div>
+        <div class="card">
+          <div>
+          Study <img src="images/icon-ellipsis.svg" alt="dots"></div>
+          <!-- span for stduy day hours -->
+          <span class="stdy">
+            0 <!-- daily -->
+          </span>
+          <p id="stdyhrs">hrs</p>
+          <p id="stdy">
+            <!-- span for study exercise day hrs -->
+            Previous - <span id="shrs">1</span> hr <!-- daily -->
+          </p>
+          <p id="wkstdy-hrs">
+            <!-- span for study wk hrs -->
+            <span id="pshrs"> 4</span>
+            hrs <!-- weekly -->
+          </p>
+          <p id="prewk-std">
+            <!-- span for study pre wk hours -->
+            Previous - <span id="spwkhrs">7</span> hrs <!-- weekly -->
+          </p>
+          <p id="mthstdy">
+            <!-- span for study mth hrs -->
+            <span id="exmthhrs"> 13</span>
+            hrs <!-- monthly -->
+          </p>
+          <p id="premth-stdyhr">
+            <!-- span for study mth pre hours -->
+            Previous - <span id="spmhrs"> 19</span>hrs <!-- monthly -->
+          </p>
+        </div>
+      </section>
+      <section class="five">
+        <div id="green" class="background"></div>
+        <div class="card">
+          <div>
+          Exercise
+          <img src="images/icon-ellipsis.svg" alt=""></div>
+          <p id="exhrs">
+            <!-- span for exercise day hrs -->
+            <span id="ehrs">1</span> hr <!-- daily -->
+          </p>
+          <p id="preexhrs">
+            <!-- span for pre exercise day hrs -->
+            Previous - <span id="epdhrs">1</span> hr <!-- daily -->
+          </p>
+          <p id="exwkhrs">
+            <!-- span for exercise wk hrs -->
+            <span id="ewhrs">4</span>
+            hrs <!-- weekly -->
+          </p>
+          <p id="preex-wkhrs">
+            <!-- span exercise pre week hrs -->
+            Previous - <span id="epwhrs"> 5</span>hrs <!-- weekly -->
+          </p>
+          <p id="exmth">
+            <!-- span for exercise mth hrs -->
+            <span id="emhrs"> 11</span>
+            hrs <!-- monthly -->
+          </p>
+          <p id="preex-mthhrs">
+            <!-- span for pre mth exercise hrs -->
+            Previous - <span id="epmhrs">18</span> hrs <!-- monthly -->
+          </p>
+        </div>
+      </section>
+      <section class="six">
+        <div id="purple" class="background"></div>
+        <div class="card">
+          <div>
+          Social
+          <img src="images/icon-ellipsis.svg" alt="dots"></div>
+          <p id="socialhrs">
+            <!-- span social day hours -->
+            <span id="schrs">1</span> hr <!-- daily -->
+          </p>
+          <p id="scpre-hrs">
+            <!-- span social day hrs -->
+            Previous - <span id="spdhrs">3</span> hrs <!-- daily -->
+          </p>
+          <p id="sc-wkhrs">
+            <!-- span social wk hrs -->
+            <span id="scwhrs">5</span>
+            hrs <!-- weekly -->
+          </p>
+          <p id="presc-wkhrs">
+            <!-- span social pre. wk hrs -->
+            Previous - <span id="scpwhrs">10</span> hrs <!-- weekly -->
+          </p>
+          <p id="scmth">
+            <!-- span mth hrs -->
+            <span id="C"> 21</span> hrs <!-- monthly -->
+          </p>
+          <p id="presc-mthhrs">
+            <!-- span social pre. mth hrs -->
+            Previous - <span id="scpmhrs">23</span> hrs <!-- monthly -->
+          </p>
+        </div>
+      </section>
+      <section class="seven">
+        <div id="gold" class="background"></div>
+        <!-- section for self care -->
+        <div class="card">
+          <div>
+          Self Care
+          <!-- img -->
+          <img src="images/icon-ellipsis.svg" alt="dots"></div>
+          <p id="slfc-hrs">
+            <!-- span slf day hrs -->
+            <span id="slfhrs">0</span> hrs <!-- daily -->
+          </p>
+          <p id="preself-hrs">
+            <!-- span slf pre. day hrs -->
+            Previous - <span id="slfpdhrs">1</span> hr <!-- daily -->
+          </p>
+          <p id="slf-wkhrs">
+            <!-- span slf week hrs -->
+            <span id="slfwhrs">2</span> hrs <!-- weekly -->
+          </p>
+          <p id="preslf-wkhrs">
+            <!-- span slf pre wk hrs  -->
+            Previous - <span id="slfpwhrs">2</span> hrs <!-- weekly -->
+          </p>
+          <p id="slfmth-hrs">
+            <!-- span slf month hrs -->
+            <span id="slfmhrs">7</span>
+            hrs <!-- monthly -->
+          </p>
+          <p id="preslf-mthhrs">
+            <!-- span s.c pre.mth.hrs -->
+            Previous - <span id="slfpmhrs">11</span> hrs <!-- monthly -->
+          </p>
+        </div>
+      </section>
+
+    <!-- </main> -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">CJ<sup>2</sup></a>.
+    </div>
+    <script src="ttd.js"></script>
+  </div>
+</body>
+
+</html>

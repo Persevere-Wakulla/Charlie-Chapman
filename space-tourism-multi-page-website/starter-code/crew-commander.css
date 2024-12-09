@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* outline: 2px solid red; */
+}
+
+/* varibles */
+:root {
+    --dark: #0b0d17;
+    --purp: #D0D6F9;
+    --white: #ffffff;
+    --heading1: 150px;
+    --heading2: 100px;
+    --heading3: 56px;
+    --heading4: 32px;
+    --heading5: 28px;
+}
+
+/* vackground img */
+body {
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+/* nav settings */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em 5em 2em;
+}
+
+/* links inside of nav  */
+.flex {
+    background: rgba(255, 255, 255, 0.201);
+    backdrop-filter: blur(10px);
+    padding: .5em;
+    border-radius: 10px;
+}
+
+/* btns for mobile */
+.closebtn,
+.openbtn {
+    display: none;
+}
+
+/* links settings */
+a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--heading5);
+    padding-right: 10px;
+}
+
+/* hover for links */
+a:hover {
+    background-color: rgba(255, 255, 255, 0.201);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+/* name of crew settings */
+.name {
+    font-size: var(--heading3);
+    color: var(--white);
+    padding-top: .6em;
+}
+
+/* rank of crew settins */
+.rank {
+    font-size: var(--heading2);
+    color: var(--purp);
+    padding-top: .5em;
+}
+
+/* first sentence  */
+.first-sentence {
+    font-size: var(--heading3);
+    color: var(--white);
+}
+
+/* description of crew paragraph */
+.paragraph {
+    letter-spacing: 2.7px;
+    color: var(--white);
+    width: 500px;
+    font-size: var(--heading4);
+    padding-top: .5em;
+    padding-bottom: .9em;
+    line-height: 1.5em;
+}
+
+/* dots for nav at bottom of page */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--purp);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* hover for dots */
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* info of crew settings */
+.info {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+/* meida query for tablet */
+@media(max-width:1000px) {
+    body {
+        background-image: url(assets/crew/background-crew-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1em;
+    }
+
+    /* nav settings */
+    nav {
+        display: flex;
+    }
+
+    /* link settings */
+    a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 20px;
+        /* padding-right: 5px; */
+    }
+
+    /* pragraph settings */
+    .paragraph {
+        margin: auto;
+        font-size: 8vw;
+        padding-top: .7em;
+    }
+
+    /* settingss for name */
+    .name {
+        font-size: 32px;
+        color: var(--white);
+    }
+
+    /* setttings for rank */
+    .rank {
+        font-size: var(--heading4);
+        color: var(--purp);
+    }
+
+    /* sentence settings */
+    .first-sentence {
+        font: 16px;
+        color: var(--white);
+    }
+
+    .info {
+        display: block;
+    }
+
+}
+
+/* media query for mobile */
+@media(max-width:600px) {
+
+    .closebtn,
+    .openbtn {
+        display: block;
+    }
+
+    /* background img */
+    body {
+        background-image: url(assets/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+
+    /* The sidepanel menu */
+    .sidepanel {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.459);
+        backdrop-filter: blur(10px);
+        opacity: initial;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+
+    }
+
+    /* The sidepanel links */
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 35px;
+        /* margin-bottom: 3em; */
+        color: var(--white);
+        display: block;
+        transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 56px;
+        margin-left: 50px;
+    }
+
+    /* Style the button that is used to open the sidepanel */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    /* hover for btn */
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    /* posittioningn info */
+    /* .crew {
+        width: 50%;
+        padding-top: 3em;
+        position: absolute;
+        left: 8em;
+    } */
+}

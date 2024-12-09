@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://frontend.turing.edu/lessons/module-1/css-transitions-transformations -->
+<html lang="en" style="--pericles-word-background: rgba(9, 46, 140, 0.92); --pericles-section-background: rgba(255, 254, 219, 1.54);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://frontend.turing.edu/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://frontend.turing.edu/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://frontend.turing.edu/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://frontend.turing.edu/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://frontend.turing.edu/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://frontend.turing.edu/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://frontend.turing.edu/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://frontend.turing.edu/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://frontend.turing.edu/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://frontend.turing.edu/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://frontend.turing.edu/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://frontend.turing.edu/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://frontend.turing.edu/assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="https://frontend.turing.edu/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<meta content="CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design" name="title">
+<meta content="CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design" name="og:title">
+
+
+  <meta content="http://frontend.turing.io/" property="og:url">
+  <meta content="Open source curriculum for the Turing School of Software and Design&#39;s front end engineering program." property="og:description">
+  <meta content="blog" property="og:type">
+
+
+
+  <meta name="keywords" content="css, introduction, practice">
+
+
+<link href="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/reset.css">
+<link rel="stylesheet" type="text/css" href="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/styles.css">
+
+<script type="text/javascript" async="" src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/analytics.js.download"></script><script type="text/javascript" async="" src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/js"></script><script src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/jquery.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/js(1)"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+gtag('config', 'GTM-NXLZ888'); </script>
+
+  <style>._pericles_action_prev,
+._pericles_action_next,
+._pericles_action_play,
+._pericles_action_stop,
+._pericles_action_pause {
+  cursor: pointer;
+  font-size: 19px;
+}
+
+._pericles_action_prev:hover,
+._pericles_action_next:hover,
+._pericles_action_play:hover,
+._pericles_action_stop:hover,
+._pericles_action_pause:hover {
+  font-size: 20px;
+}
+
+._pericles_action_prev:active,
+._pericles_action_next:active,
+._pericles_action_play:active,
+._pericles_action_stop:active,
+._pericles_action_pause:active {
+  font-size: 19px;
+}
+
+img._pericles_action_icon {
+  display: inline-block !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: top !important;
+  opacity: 0.9 !important;
+}
+
+img._pericles_action_icon:hover {
+  opacity: 1 !important;
+}
+
+ps-section,
+ps-word {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ps-word[data-audio-index]:hover {
+  background: #ccc;
+  cursor: crosshair;
+}
+
+ps-section {
+  position: relative;
+  cursor: pointer;
+}
+
+ps-section:hover {
+  background: var(--pericles-section-background);
+}
+
+._pericles_action_container {
+  border-radius: 4px;
+  width: 50px;
+  /* width: 74px; */
+  height: 26px;
+  /* background: linear-gradient(180deg, #ccc, transparent); */
+  background: #eee;
+  line-height: 32px;
+  transition: opacity 0.55s ease-in-out;
+  -moz-transition: opacity 0.55s ease-in-out;
+  -webkit-transition: opacity 0.55s ease-in-out;
+}
+
+._pericles_inspector {
+  border: 1px solid #000;
+  background-color: rgba(102, 136, 253, 0.2) !important;
+  color: #000 !important;
+  /* opacity: 0.6; */
+}
+
+@keyframes _periclesFadeOut {
+  0% {
+    background: #ccc;
+    color: #000;
+  }
+
+  100% {
+    background: transparent;
+    color: inherit;
+  }
+}
+._pericles_word_tracker_style_fade,
+._pericles_prev_word_tracker_style_fade {
+  border-radius: 2px;
+  text-shadow: none;
+}
+
+._pericles_prev_word_tracker_style_fade {
+  background: transparent;
+  animation: _periclesFadeOut 2s ease-out;
+  color: inherit;
+}
+
+rect._pericles_section_highlight_style_background {
+  fill: var(--pericles-section-background);
+  opacity: 0.4;
+}
+
+._pericles_section_highlight_style_background {
+  background: var(--pericles-section-background);
+}
+
+._pericles_section_highlight_style_border {
+  border: 1px solid var(--pericles-section-background);
+}
+
+rect._pericles_section_highlight_style_border {
+  stroke: var(--pericles-section-background);
+}
+
+._pericles_word_tracker_style_background {
+  background: var(--pericles-word-background);
+}
+
+._pericles_word_tracker_style_underline {
+  border-top: 1px solid var(--pericles-word-background);
+  border-bottom: 1px solid var(--pericles-word-background);
+}
+
+._pericles_word_tracker_style_fade {
+  background: var(--pericles-word-background);
+  color: #fff;
+}
+</style></head>
+
+  <body>
+    <nav role="navigation">
+  <ul class="nav-links">
+    <li>
+      <a href="https://frontend.turing.edu/" class="home-logo-link">
+        <img src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/TuringSchool_LogoMark_Gray.png" alt="Turing School of Software and Design logo">
+      </a>
+    </li>
+    <li class="uppercase"><a href="https://frontend.turing.edu/today">Calendar</a></li>
+    <li class="uppercase"><a href="https://frontend.turing.edu/lessons" class="active-link">Lessons</a></li>
+    <li class="uppercase"><a href="https://frontend.turing.edu/projects">Projects</a></li>
+    <li class="uppercase"><a href="https://frontend.turing.edu/documents">Documents</a></li>
+    <li class="search-bar">
+      <input aria-label="search-input" type="search" placeholder="Search lessons...">
+      <button class="clear-search hide">
+        <img src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/x-icon.svg">
+      </button>
+    </li>
+  </ul>
+</nav>
+
+    <div class="container">
+      <section class="content">
+        <article>
+          <header>
+            <h1>
+              CSS Transitions, Transformations, Animations
+            </h1>
+          </header>
+          <h2 id="overview--docs">Overview &amp; Docs</h2>
+
+<p>Let’s review our three building blocks for front end development:</p>
+
+<ul>
+  <li>
+<strong>STRUCTURE</strong>:  HyperText Markup Language (HTML) defines the structure and semantics of web pages on the web.</li>
+  <li>
+<strong>PRESENTATION</strong>:  Cascading Style Sheets (CSS) sets the look and style of a web page. CSS provides style to the structure provided by HTML.</li>
+  <li>
+<strong>BEHAVIOR</strong>:  JavaScript allows us to define interaction in our pages. What happens when a user clicks on a certain area?</li>
+</ul>
+
+<p>Turns out, CSS has some “behaviour tricks” up its sleeve as well. Through CSS transitions, transformations, and animations you can create quite a bit of movement on your page sans any real JavaScript. Stunning examples include:</p>
+
+<ul>
+  <li><a href="https://www.supremo.tv/typeterms/">Type Terms</a></li>
+  <li><a href="http://codepen.io/fbrz/pen/whxbF?editors=1100#0">Code Pen: Page Flip</a></li>
+  <li><a href="http://demo.marcofolio.net/3d_animation_css3/">Movie Posters</a></li>
+  <li><a href="http://www.romancortes.com/ficheros/css-coke.html">Coke Can</a></li>
+</ul>
+
+<h3 id="definitions">Definitions:</h3>
+
+<ul>
+  <li>CSS Transitions: CSS transitions allow property changes in CSS values to occur smoothly over a specified duration of time.</li>
+  <li>CSS Transformations: By modifying the coordinate space, CSS transforms change the shape and position of the affected content without disrupting the normal document flow.</li>
+  <li>CSS Animations: For more involved movement, we can use CSS animations rather than transitions and transformations. What’s the difference? A transition is typically a state change that goes from A to B (like a :hover state), while an animation may have many stages from A to B to C to D.</li>
+</ul>
+
+<h1 id="docs">Docs</h1>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">MDN CSS Transitions</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Animatable Properties</a></li>
+  <li><a href="https://css-tricks.com/almanac/properties/t/transform/">CSS Tricks Transform</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">CSS Animations</a></li>
+  <li><a href="https://css-tricks.com/almanac/properties/a/animation/">CSS Tricks Animation</a></li>
+</ul>
+
+<h1 id="practice">Practice</h1>
+
+<h3 id="code-pen-1">Code Pen #1</h3>
+
+<p>Setup a div with the following styles:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">background-color</span><span class="o">:</span> <span class="nt">yellow</span><span class="o">;</span>
+  <span class="nt">border-radius</span><span class="o">:</span> <span class="err">30</span><span class="nt">px</span><span class="o">;</span>
+  <span class="nt">height</span><span class="o">:</span> <span class="err">300</span><span class="nt">px</span><span class="o">;</span>
+  <span class="nt">width</span><span class="o">:</span> <span class="err">300</span><span class="nt">px</span><span class="o">;</span>
+  <span class="nt">margin</span><span class="o">:</span> <span class="err">0</span> <span class="nt">auto</span><span class="o">;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Create a pseudo class of <code class="language-plaintext highlighter-rouge">hover</code>. On hover, the div should transition background color on a 2s delay. (Hint: <code class="language-plaintext highlighter-rouge">transition-property</code> &amp; <code class="language-plaintext highlighter-rouge">transition-duration</code> are things)</li>
+  <li>What happens with the transition when you move your cursor off the div?</li>
+  <li>Move the transition properties out of the hover state and onto the base div. What is different now when you move your cursor off the block?</li>
+  <li>You can chain properties together that you want to transition. Change the background-color and border-radius at the same time, but set them to different duration speeds. The border of the box should transition from 30px to 0.</li>
+  <li>Assuming you have successfully completed steps 1-4, now delete the <code class="language-plaintext highlighter-rouge">transition-property</code> line of code. Does your animation still work? Why?</li>
+</ol>
+
+<h3 id="code-pen-2">Code Pen #2</h3>
+
+<p>Setup:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="n">grey</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">90%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">25%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ol>
+  <li>Create a hover state for the CONTAINER whereby the background color of the BOX changes to green.</li>
+  <li>Make the box move on hover by adding <code class="language-plaintext highlighter-rouge">margin-left: 75%</code>.</li>
+  <li>It’s a stark transition. Smooth it out with a 1s transition that works when the user moves their cursor onto the container, and also works when they move their cursor off of the container.</li>
+  <li>Experiment with the following three values with the
+<code class="language-plaintext highlighter-rouge">transition-timing-function</code> on the container:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">transition-timing-function: ease;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">transition-timing-function: steps(4, end);</code></li>
+      <li><code class="language-plaintext highlighter-rouge">transition-timing-function: cubic-bezier(1, -1, 1, .5);</code></li>
+    </ul>
+  </li>
+  <li>Discuss your observations from #4 and research the documentation to prove and clarify your observations.</li>
+</ol>
+
+<h3 id="code-pen-3">Code Pen #3</h3>
+<p>Make 4 divs inside a wrapping element. When the wrapping element is hovered on, apply different transitions to all 4 internal divs using transition-delay so the transitions execute at different times. Make them move, change colors, change borders, go nuts. Use this block of code as a starting point:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="nc">.a</span> <span class="p">{</span> <span class="nl">transition-delay</span><span class="p">:</span> <span class="m">0s</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">div</span> <span class="nc">.b</span> <span class="p">{</span> <span class="nl">transition-delay</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">div</span> <span class="nc">.c</span> <span class="p">{</span> <span class="nl">transition-delay</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">div</span> <span class="nc">.d</span> <span class="p">{</span> <span class="nl">transition-delay</span><span class="p">:</span> <span class="m">3s</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="code-pen-4">Code Pen #4</h3>
+<p>Setup:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="n">grey</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">90%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">5px</span> <span class="nb">solid</span> <span class="no">red</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">95px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">45deg</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Rotate the box counter-clockwise 45 degrees</li>
+  <li>What happens when you pass rotate an argument of <code class="language-plaintext highlighter-rouge">.5turn</code> or <code class="language-plaintext highlighter-rouge">.75turn</code> or <code class="language-plaintext highlighter-rouge">2turn</code>
+</li>
+  <li>You can control the origin from which the transformation initiates. Add <code class="language-plaintext highlighter-rouge">-webkit-transform-origin: 100% 100%;</code> to the hover state of your container and then experiment with changing the x and y values of the property. What do you notice by using 0 for both x and y, versus using 50% for both x and y?</li>
+  <li>Implement <code class="language-plaintext highlighter-rouge">scale</code> and <code class="language-plaintext highlighter-rouge">skew</code> transformations</li>
+</ol>
+
+<h3 id="code-pen-5">Code Pen #5</h3>
+
+<p>Setup:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">100px</span> <span class="nb">auto</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@keyframes</span> <span class="n">testAnimation</span> <span class="p">{</span>
+  <span class="err">0</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">360deg</span><span class="p">);</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span> <span class="m">0</span> <span class="m">50%</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="err">100</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">aqua</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span> <span class="m">50%</span> <span class="m">0</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Discuss with your partner what the testAnimation will do</li>
+  <li>Connect the defined keyframes to the div</li>
+  <li>Create a 3s duration for the animation</li>
+  <li>Create a zero animation delay</li>
+  <li>Create an infinite iteration count</li>
+  <li>Create a linear timing function</li>
+  <li>Set the animation direction to alternate</li>
+</ol>
+
+<h3 id="code-pen-6-facepunch-dizzy_face">Code Pen #6 <img class="emoji" title=":facepunch:" alt=":facepunch:" src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/1f44a.png" height="20" width="20"> <img class="emoji" title=":dizzy_face:" alt=":dizzy_face:" src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/1f635.png" height="20" width="20">
+</h3>
+<p>Experiment with all you’ve just learned and make a 4-stage animation(s). Hint: CodePen #5 was a 2-stage animation. Post animations in cohort slack channel.</p>
+
+        </article>
+      </section>
+    </div>
+    <section class="search-results-container hide">
+  <h2>Lesson Search Results</h2>
+  <h3>Showing top 10 results</h3>
+  <ul class="search-results"></ul>
+  <img class="clear-search" src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/x-icon.svg">
+</section>
+
+<script src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/algoliasearch.min.js.download"></script>
+<script>
+  window.ALGOLIA_CONFIG = {
+    'applicationId': 'OOLQ64CUYT',
+    'indexName': 'front-end-curriculum',
+    'apiKey': '5b955c38c514d8e5cb906c983c8c24db'
+  }
+</script>
+<script src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/search.js.download"></script>
+    <script async="" src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/ei.js.download"></script>
+    <script src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/active-links.js.download"></script>
+    <script src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/expander.js.download"></script>
+  
+
+<iframe id="_pericles_content_iframe" style="position: absolute; top: -99px; left: 0px; width: 50px; height: 26px; background: transparent; overflow: visible; margin-top: -30px; transition: top 2s ease-in-out 0s; z-index: 2147483647; border: none; padding: 0px;" src="./CSS Transitions, Transformations, Animations - Front-End Engineering Curriculum - Turing School of Software and Design_files/saved_resource.html"></iframe></body></html>

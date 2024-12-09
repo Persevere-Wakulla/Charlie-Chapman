@@ -1,0 +1,4 @@
+.element {
+    offset-path: path("M100,50a50,50,0,1,1-50-50A50,50,0,0,1,100,50Z");
+  animation: move 3s linear infinite;
+  }

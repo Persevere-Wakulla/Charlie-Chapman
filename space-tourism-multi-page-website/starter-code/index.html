@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="space.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <img src="assets/shared/logo.svg" alt="logo" id="logo">
+      <!-- <p class="line">&#x2594;</p> -->
+      <div class="flex sidepanel" id="mySidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html" class="link" id="home">00 Home</a>
+        <a href="./destination-moon.html" class="link" id="destination">01 Destination</a>
+        <a href="./crew-commander.html" class="link" id="crew">02 Crew</a>
+        <a href="./technology-vehicle.html" class="link" id="tech">03 Technology</a>
+      </div>
+      <button type="button" onclick="openNav()" class="openbtn"> <img src="assets/shared/icon-hamburger.svg" alt=""
+          id="menu">
+      </button>
+    </nav>
+    <article>
+      <div class="grid">
+        <h3 id="first-line"> So, you want to travel to</h3>
+        <h1 id="space">SPACE</h1>
+        <h4 id="paragraph">
+          Let’s face it; if you want to go to space, you might as well genuinely go to
+          outer space and not hover kind of on the edge of it. Well sit back, and relax
+          because we’ll give you a truly out of this world experience!
+        </h4>
+      </div>
+    </article>
+    <div class="exp"><a href="./destination-moon.html">
+      <button type="button" class="expBtn explore">
+        Explore
+      </button></a>
+    </div>
+  </main>
+  <script src="space.js"></script>
+</body>
+
+</html>

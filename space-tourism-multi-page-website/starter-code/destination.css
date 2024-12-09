@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark: #0b0d17;
+  --purp: #D0D6F9;
+  --white: #ffffff;
+  --heading1: 150px;
+  --heading2: 100px;
+  --heading3: 56px;
+  --heading4: 32px;
+  --heading5: 28px;
+}
+
+body {
+  /* color: aqua; */
+  background-image: url(assets/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 2em 5em 2em;
+}
+
+.line {
+  border-top: 4px solid var(--white);
+  position: absolute;
+  left: 6.5em;
+  top: 2.8em;
+  width: 800px;
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding-right: 3em;
+  background: rgba(255, 255, 255, 0.201);
+  backdrop-filter: blur(10px);
+  padding: .5em;
+}
+
+a {
+  color: var(--purp);
+  text-decoration: none;
+  font-size: 28px;
+  padding-right: .83em;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.201);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.closebtn,
+.openbtn {
+  display: none;
+}
+
+.plants {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 4em;
+}
+
+.name {
+  font-size: 100px;
+  color: var(--white);
+  padding-bottom: 1em;
+}
+
+.dist-time {
+  display: flex;
+  color: var(--purp);
+  padding-top: 3em;
+  gap: 2.5em;
+  /* border-top:2px solid var(--white) ; */
+}
+
+.png {
+  margin-top: 5em;
+  margin-left: 5em;
+}
+
+hr {
+  margin-top: 1em;
+  width: 350px;
+}
+
+.descript {
+  line-height: 1.5em;
+  color: var(--purp);
+  font-size: var(--heading3);
+  /* width: 400px; */
+}
+
+.km,
+.pick_dest,
+.days {
+  font-size: var(--heading3);
+  letter-spacing: 4.75px;
+}
+
+.links {
+  padding-bottom: 1.5em;
+  /* color: var(--purp); */
+}
+
+.avg-d,
+.est-tt {
+  letter-spacing: 4.75px;
+  padding-bottom: .5em;
+}
+
+.pick_dest {
+  color: var(--white);
+}
+
+@media(max-width:950px) {
+  body {
+    /* color: aqua; */
+    background-image: url(assets/destination/background-destination-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100vw;
+  }
+  .descript{
+    font-size: var(--heading2);
+  }
+
+  nav {
+    display: flex;
+  }
+  .png{
+    width: 100%;
+  }
+
+  .line {
+    border-top: 4px solid var(--white);
+    position: absolute;
+    left: 6.5em;
+    top: 2.8em;
+    width: 700px;
+  }
+
+  .plants {
+    display: block;
+  }
+
+  .grid {
+    padding-top: 2.5em;
+  }
+}
+
+@media(max-width:600px) {
+  body {
+    /* color: aqua; */
+    background-image: url(assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100vh;
+  }
+
+
+  nav {
+    padding: .5rem;
+    /* align-items: flex-start;
+   justify-content: space-between; */
+  }
+
+  .closebtn,
+  .openbtn {
+    display: block;
+  }
+
+  .flex {
+    display: block;
+    /* justify-content: space-between */
+    gap: 20px;
+  }
+
+  /* The sidepanel menu */
+  .sidepanel {
+    height: 100vh;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: rgb(8 8 8 / 70%);
+    /* Black*/
+    opacity: initial;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+  }
+
+  .title {
+    padding-bottom: 1em;
+  }
+
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    margin-bottom: 3em;
+    color: var(--white);
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 56px;
+    margin-left: 50px;
+  }
+
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  .plants {
+    display: block;
+  }
+
+  .km,
+  .pick_dest,
+  .days {
+    font-size: var(--heading5);
+    letter-spacing: 1.75px;
+  }
+
+  .png {
+    min-width: 50%;
+  }
+
+  .name {
+    font-size: 30px;
+    color: var(--white);
+    padding-bottom: 1em;
+  }
+
+  .descript {
+    font-size: var(--heading4);
+  }
+
+  .png {
+    margin: 0 auto;
+    padding-top: 1.5em;
+  }
+}
